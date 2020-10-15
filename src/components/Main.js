@@ -25,7 +25,9 @@ export default function Main(props){
 
   return (
     <ul className='container-pokemons'>
-
+      {pokemons.map(p => 
+        <Pokemon name={p.name} url={p.url} id={p.id} key={p.id} />
+      )}
     </ul>
   )
 }
