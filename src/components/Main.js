@@ -1,11 +1,12 @@
 import React from 'react';
-import {useEffect} from 'react';
+import {useEffect,useState} from 'react';
 import axios from 'axios';
 
 import Pokemon from './Pokemon';
 
 export default function Main(props){
   const {pokemons,setPokemons} = props;
+  const [loading,setLoading] = useState(true);
 
   useEffect(() => {
     axios.get('https://pokeapi.co/api/v2/pokemon?limit=893').then(response => {
@@ -20,8 +21,13 @@ export default function Main(props){
           }
         })
       )
+      setTimeout(() => setLoading(false),500)
     })
   },[])
+
+  if(loading || pokemons.length === 0){
+    return <img src='images/pokemongo.gif' className='spinner' alt='Carregando'/>
+  }
 
   return (
     <ul className='container-pokemons'>

@@ -59,3 +59,7 @@ h3::first-letter{
   font-weight: 300;
   margin-top: 5px;
 }
+.spinner{
+  width: 100vw;
+  margin: auto 0;
+}
