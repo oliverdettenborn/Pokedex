@@ -1,7 +1,31 @@
-import React from 'react'
+import React from 'react';
+import {useEffect} from 'react';
+import axios from 'axios';
 
-export default function Main(){
+import Pokemon from './Pokemon';
+
+export default function Main(props){
+  const {pokemons,setPokemons} = props;
+
+  useEffect(() => {
+    axios.get('https://pokeapi.co/api/v2/pokemon?limit=893').then(response => {
+      const {results} = response.data;
+      setPokemons(
+        results.map(e => {
+          const id = e.url.split('/')
+          return {
+            name: e.name,
+            url: e.url,
+            id: id[6]
+          }
+        })
+      )
+    })
+  },[])
+
   return (
-    <h1>Teste</h1>
+    <ul className='container-pokemons'>
+
+    </ul>
   )
 }

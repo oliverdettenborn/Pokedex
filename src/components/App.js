@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 import {
   BrowserRouter,
   Route,
@@ -7,19 +8,21 @@ import {
 
 import Header from './Header';
 import Main from './Main';
-import Pokemon from './Pokemon';
+import PokemonDetails from './PokemonDetails';
 
 
 export default function App(){
+  const [pokemons,setPokemons] = useState([]);
+  
   return (
     <BrowserRouter>
       <Header />
       <Switch>
         <Route path='/' exact>
-          <Main />
+          <Main pokemons={pokemons} setPokemons={setPokemons}/>
         </Route>
         <Route path='/pokemon/:id' exact>
-          <Pokemon />
+          <PokemonDetails />
         </Route>
       </Switch>
     </BrowserRouter>
