@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Header(){
   return (
-    <h1>Teste</h1>
+    <header className='box-shadow'>
+      <img src='images/logo.png' className='logo' alt='Logo Pokédex' />
+    </header>
   )
 }
