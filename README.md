@@ -44,9 +44,9 @@ The following tools were used in the construction of the project:
 
 # Layout Mobile
 
-The application layout is available on Netlify:
+The application layout is available on Vercel:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e071f8d-ed8b-43ff-b9ea-6c1e685153bb/deploy-status)](https://app.netlify.com/sites/thaliadettenborn-pokedex/deploys)
+[![Vercel](https://thaliadettenborn-pokedex-jh61irit7.vercel.app/)
 
 ![./public/images/bonus-busca.png](./public/images/bonus-busca.png)<br>
 ![./public/images/pagina-pokemon.png](./public/images/pagina-pokemon.png)
