@@ -46,7 +46,7 @@ The following tools were used in the construction of the project:
 
 The application layout is available on Netlify:
 
-![https://img.shields.io/badge/Deploy-Netlify-red]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e071f8d-ed8b-43ff-b9ea-6c1e685153bb/deploy-status)](https://app.netlify.com/sites/thaliadettenborn-pokedex/deploys)
 
 ![./public/images/bonus-busca.png](./public/images/bonus-busca.png)<br>
 ![./public/images/pagina-pokemon.png](./public/images/pagina-pokemon.png)
