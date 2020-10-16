@@ -14,12 +14,12 @@ export default function DescriptionPokemon(props){
       </div>
 
       <QualityPokemon 
-        name={"Tipos"} 
-        value={types.map((a,i) => <h3>• {a.type.name}</h3>)} 
+        name={"Tipos"}
+        value={types.map((t,i) => <p key={i}>• {t.type.name}</p>)} 
       />
       <QualityPokemon 
         name={"Habilidades"} 
-        value={abilities.map((a,i) => <h3>• {a.ability.name}</h3>)} 
+        value={abilities.map((a,i) => <p key={i}>• {a.ability.name}</p>)} 
       />
     </div>
   )
