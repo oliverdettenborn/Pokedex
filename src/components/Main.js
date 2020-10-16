@@ -3,6 +3,7 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 
 import Pokemon from './Pokemon';
+import Search from './Search';
 
 export default function Main(props){
   const {pokemons,setPokemons} = props;
@@ -30,10 +31,13 @@ export default function Main(props){
   }
 
   return (
-    <ul className='container-pokemons'>
-      {pokemons.map(p => 
-        <Pokemon name={p.name} id={p.id} key={p.id} />
-      )}
-    </ul>
+    <>
+      <Search />
+      <ul className='container-pokemons'>
+        {pokemons.map(p => 
+          <Pokemon name={p.name} id={p.id} key={p.id} />
+        )}
+      </ul>
+    </>
   )
 }

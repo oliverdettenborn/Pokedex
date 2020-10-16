@@ -31,6 +31,29 @@ ul.container-pokemons{
   flex-wrap: wrap;
   padding: 0 10px;
 }
+.search{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  color: #8e8e8e;
+  margin-bottom: 5px;
+}
+.search input{
+  width: auto;
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 170px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 300;
+  text-align: center;
+}
+.search input:focus{
+  text-align: start;
+  outline: #8e8e8e38;
+  width: 70%;
+}
 .container-pokemons div{
   width: 150px;
   height: 150px;
