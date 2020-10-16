@@ -25,7 +25,7 @@ export default function App(){
           />
         </Route>
         <Route path='/pokemon/:id'>
-          <PokemonDetails />
+          <PokemonDetails quantityPokemon={pokemons.length}/>
         </Route>
       </Switch>
     </BrowserRouter>

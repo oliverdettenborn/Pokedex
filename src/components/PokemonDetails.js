@@ -7,7 +7,7 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import HeaderPokemon from './HeaderPokemon';
 import DescriptionPokemom from './DescriptionPokemon';
 
-export default function PokemonDetails(){
+export default function PokemonDetails(props){
   const {id} = useParams();
   const [pokemon,setPokemon] = useState({});
   const [loading,setLoading] = useState(true);
@@ -18,7 +18,7 @@ export default function PokemonDetails(){
       setPokemon({name,height,weight,base_experience,abilities,types});
       setTimeout(() => setLoading(false),500)
     })
-  },[])
+  },[id])
 
   if(loading || pokemon.length === 0){
     return <img src='/images/pokemongo.gif' className='spinner' alt='Carregando'/>
@@ -29,7 +29,7 @@ export default function PokemonDetails(){
       <Link to="/">
         <FontAwesomeIcon className='icon exit' icon={faTimesCircle} />
       </Link>
-      <HeaderPokemon name={pokemon.name} id={id} />
+      <HeaderPokemon name={pokemon.name} id={id} quantityPokemon={props.quantityPokemon} />
       <DescriptionPokemom 
         height={pokemon.height} 
         weight={pokemon.weight}
