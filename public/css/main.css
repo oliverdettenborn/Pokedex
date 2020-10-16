@@ -76,7 +76,7 @@ h3{
   font-size: 18px;
   font-weight: 500;
 }
-h3::first-letter{
+h3::first-letter,p::first-letter{
   text-transform: uppercase;
 }
 h5{
