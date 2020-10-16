@@ -29,7 +29,7 @@ ul.container-pokemons{
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.pokemon{
+.container-pokemons div{
   width: 155px;
   height: 155px;
   flex-shrink: 0;
@@ -41,11 +41,11 @@ ul.container-pokemons{
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
-.pokemon img{
+.container-pokemons div img{
   width: 70px;
   height: 70px;
 }
-.pokemon h3{
+h3{
   margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -53,7 +53,7 @@ ul.container-pokemons{
 h3::first-letter{
   text-transform: uppercase;
 }
-.pokemon h5{
+h5{
   font-size: 16px;
   color: #8e8e8e;
   font-weight: 300;
@@ -62,4 +62,39 @@ h3::first-letter{
 .spinner{
   width: 100vw;
   margin: auto 0;
+}
+
+.container-pokemon-select{
+  width: 95vw;
+  margin: 0 auto;
+}
+.container-pokemon-select header{
+  background-color: white;
+  height: 165px;
+  width: 100%;
+  position: initial;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+}
+.container-pokemon-select header div img{
+  width: 100px;
+}
+.container-pokemon-select .description{
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.description h3, .description h5{
+  font-size: 20px;
+}
+.container-pokemon-select .description > div:not(:last-child){
+  margin-bottom: 25px;
+}
+.container-pokemon-select .description > div:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }

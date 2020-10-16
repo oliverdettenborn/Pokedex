@@ -6,7 +6,7 @@ export default function Pokemon(props){
 
   return (
     <Link to={`/pokemon/${id}`}>
-      <li className='pokemon'>
+      <div>
         <img src={
           (id < 650) 
           ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${parseInt(id)}.gif` 
@@ -14,7 +14,7 @@ export default function Pokemon(props){
         />
         <h3>{name}</h3>
         <h5>{`#${id}`}</h5>
-      </li>
+      </div>
     </Link>
   )
 }

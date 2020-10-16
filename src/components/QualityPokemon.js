@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function QualityPokemon(props){
   return (
-    <span>
-      {props.name} 
-      <span>{props.value}</span>
-    </span>
+    <div>
+      <h5>{props.name}</h5>
+      <h3>{props.value}</h3>
+    </div>
   )
 }

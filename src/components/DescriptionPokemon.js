@@ -6,7 +6,7 @@ export default function DescriptionPokemon(props){
   const {weight,height,experience,types,abilities} = props;
 
   return (
-    <div className='box-shadow'>
+    <div className='box-shadow description'>
       <div>
         <QualityPokemon name={"Peso"} value={weight} />
         <QualityPokemon name={"Altura"} value={height} />
@@ -15,11 +15,11 @@ export default function DescriptionPokemon(props){
 
       <QualityPokemon 
         name={"Tipos"} 
-        value={types.map(a => <li>{a.type.name}</li>)} 
+        value={types.map(a => <h3>• {a.type.name}</h3>)} 
       />
       <QualityPokemon 
         name={"Habilidades"} 
-        value={abilities.map(a => <li>{a.ability.name}</li>)} 
+        value={abilities.map(a => <h3>• {a.ability.name}</h3>)} 
       />
     </div>
   )
