@@ -46,10 +46,10 @@ The following tools were used in the construction of the project:
 
 The application layout is available on Vercel:
 
-[![Vercel](https://thaliadettenborn-pokedex-jh61irit7.vercel.app/)
+![[Vercel](https://badgen.net/badge/icon/now?icon=now&label)](https://thaliadettenborn-pokedex-jh61irit7.vercel.app/)
 
-![./public/images/bonus-busca.png](./public/images/bonus-busca.png)<br>
-![./public/images/pagina-pokemon.png](./public/images/pagina-pokemon.png)
+![./dist/images/bonus-busca.png](./public/images/bonus-busca.png)<br>
+![./dist/images/pagina-pokemon.png](./public/images/pagina-pokemon.png)
 
 ### Contributors
 <a href="https://www.respondeai.com.br/">
