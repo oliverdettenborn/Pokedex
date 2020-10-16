@@ -8,6 +8,7 @@ import Search from './Search';
 export default function Main(props){
   const {pokemons,setPokemons} = props;
   const [loading,setLoading] = useState(true);
+  const [textSearch,setTextSearch] = useState('');
 
   useEffect(() => {
     axios.get('https://pokeapi.co/api/v2/pokemon?limit=893').then(response => {
@@ -30,9 +31,11 @@ export default function Main(props){
     return <img src='/images/pokemongo.gif' className='spinner' alt='Carregando'/>
   }
 
+  
+
   return (
     <>
-      <Search />
+      <Search textSearch={textSearch} setTextSearch={setTextSearch} />
       <ul className='container-pokemons'>
         {pokemons.map(p => 
           <Pokemon name={p.name} id={p.id} key={p.id} />
