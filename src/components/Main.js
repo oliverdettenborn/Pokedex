@@ -26,7 +26,7 @@ export default function Main(props){
   },[])
 
   if(loading || pokemons.length === 0){
-    return <img src='images/pokemongo.gif' className='spinner' alt='Carregando'/>
+    return <img src='/images/pokemongo.gif' className='spinner' alt='Carregando'/>
   }
 
   return (

@@ -13,15 +13,18 @@ import PokemonDetails from './PokemonDetails';
 
 export default function App(){
   const [pokemons,setPokemons] = useState([]);
-  
+
   return (
     <BrowserRouter>
       <Header />
       <Switch>
         <Route path='/' exact>
-          <Main pokemons={pokemons} setPokemons={setPokemons}/>
+          <Main 
+            pokemons={pokemons} 
+            setPokemons={setPokemons}
+          />
         </Route>
-        <Route path='/pokemon/:id' exact>
+        <Route path='/pokemon/:id'>
           <PokemonDetails />
         </Route>
       </Switch>
