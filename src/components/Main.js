@@ -31,15 +31,14 @@ export default function Main(props){
     return <img src='/images/pokemongo.gif' className='spinner' alt='Carregando'/>
   }
 
-  
-
   return (
     <>
       <Search textSearch={textSearch} setTextSearch={setTextSearch} />
       <ul className='container-pokemons'>
-        {pokemons.map(p => 
-          <Pokemon name={p.name} id={p.id} key={p.id} />
-        )}
+        {pokemons
+          .filter(e => e.name.includes(textSearch))
+          .map(p => <Pokemon name={p.name} id={p.id} key={p.id} />)
+        }
       </ul>
     </>
   )
