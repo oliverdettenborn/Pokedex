@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo.png" height="150" width="175" alt="Pokédex" />
+  <img src="public/images/logo.png" width="175" alt="Pokédex" />
 </p>
 
 # Pokédex
@@ -29,7 +29,7 @@ Languages:<br>
     <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
     <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
     <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-    <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+    <img src="https://img.shields.io/badge/react%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%23F7DF1E"/>
 </p>
 
 The following tools were used in the construction of the project:
@@ -48,7 +48,7 @@ The application layout is available on Netlify:
 
 ![https://img.shields.io/badge/Deploy-Netlify-red]()
 
-![./public/images/bonus-busca.png](./public/images/bonus-busca.png)
+![./public/images/bonus-busca.png](./public/images/bonus-busca.png)<br>
 ![./public/images/pagina-pokemon.png](./public/images/pagina-pokemon.png)
 
 ### Contributors
