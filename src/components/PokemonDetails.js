@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 import HeaderPokemon from './HeaderPokemon';
 import DescriptionPokemom from './DescriptionPokemon';
@@ -24,6 +26,9 @@ export default function PokemonDetails(){
 
   return (
     <article className='container-pokemon-select'>
+      <Link to="/">
+        <FontAwesomeIcon className='icon exit' icon={faTimesCircle} />
+      </Link>
       <HeaderPokemon name={pokemon.name} id={id} />
       <DescriptionPokemom 
         height={pokemon.height} 
