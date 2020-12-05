@@ -6,14 +6,13 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Header from './Header';
-import Main from './Main';
-import PokemonDetails from './PokemonDetails';
+import Header from './components/Header';
+import Main from './components/Main';
+import PokemonDetails from './components/PokemonDetails';
 
 
-export default function App(){
+function App(){
   const [pokemons,setPokemons] = useState([]);
-
   return (
     <BrowserRouter>
       <Header />
@@ -31,3 +30,5 @@ export default function App(){
     </BrowserRouter>
   )
 }
+
+export default App;
