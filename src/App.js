@@ -1,33 +1,28 @@
 import React from 'react';
-import {useState} from 'react';
 import {
   BrowserRouter,
   Route,
   Switch
 } from 'react-router-dom';
 
-import Header from './components/Header';
-import Main from './components/Main';
-import PokemonDetails from './components/PokemonDetails';
-
+import GlobalStyle from './assets/GlobalStyle'
+import { Header } from './components';
+import PokemonList from './pages/PokemonList';
+import PokemonDetails from './pages/PokemonDetails';
+import { PokemonsPorvider } from './context/PokemonsContext';
 
 function App(){
-  const [pokemons,setPokemons] = useState([]);
   return (
-    <BrowserRouter>
-      <Header />
-      <Switch>
-        <Route path='/' exact>
-          <Main 
-            pokemons={pokemons} 
-            setPokemons={setPokemons}
-          />
-        </Route>
-        <Route path='/pokemon/:id'>
-          <PokemonDetails quantityPokemon={pokemons.length}/>
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <PokemonsPorvider>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Header />
+        <Switch>
+          <Route path='/' exact component={PokemonList}/>
+          <Route path='/pokemon/:id' component={PokemonDetails}/>
+        </Switch>
+      </BrowserRouter>
+    </PokemonsPorvider>
   )
 }
 
