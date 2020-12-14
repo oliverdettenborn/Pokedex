@@ -22,6 +22,7 @@ const Container = styled.header`
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+  z-index: 10;
 
   img{
     width: 180px;
