@@ -16,7 +16,7 @@ export default function PokemonDetails(props){
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(response => {
       const {name,height,weight,base_experience,abilities,types} = response.data
       setPokemon({name,height,weight,base_experience,abilities,types});
-      setTimeout(() => setLoading(false),500)
+      setLoading(false)
     })
   },[id])
 

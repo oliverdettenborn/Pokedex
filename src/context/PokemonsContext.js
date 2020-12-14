@@ -23,7 +23,7 @@ export function PokemonsPorvider(props){
             }
           })
         )
-        setTimeout(() => setLoading(false),500)
+        setLoading(false)
       })
   },[])
 
