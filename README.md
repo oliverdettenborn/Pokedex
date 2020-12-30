@@ -4,6 +4,8 @@
 
 # Pokédex
 
+![license](https://img.shields.io/github/license/thaliadettenborn/Pokedex?style=flat-square) ![total lines](https://img.shields.io/tokei/lines/github/thaliadettenborn/Pokedex) ![last commit](https://img.shields.io/github/last-commit/thaliadettenborn/Pokedex?style=flat-square) ![issues](https://img.shields.io/github/package-json/v/thaliadettenborn/Pokedex?style=flat-square) ![forks](https://img.shields.io/github/forks/thaliadettenborn/Pokedex?style=flat-square)
+
 ## About
 <p>
     The Pokédex is a Progressive Web App with a digital encyclopedia created by Professor Oak as an invaluable tool to Trainers in the Pokémon world. This project was developed throughout the Bootcamp of "Respode Aí" as a web application that lists all Pokemons and their descriptions.
