@@ -56,13 +56,11 @@ The application layout is available on Vercel:
 <a style='margin-left: 10px;' href='https://pokedex.thaliadettenborn.vercel.app/' target="_blank"><img src='https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white'></a>
 
 ### Contributors
-<p align='center'>
-  <a href="https://www.respondeai.com.br/">
-  <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/69740567?s=60&v=4" width="100px;"/>
-  <br>
-  <sub><b>Responde Aí</b></sub>
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/responde-ai"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/40724166?s=200&v=4" width="100px;" alt=""/><br /><sub><b>Responde Aí</b></sub></a><br />
+  </tr>
+</table>
 
 ### Author
 ---
